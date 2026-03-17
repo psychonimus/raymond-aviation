@@ -24,11 +24,11 @@
   padding-bottom: 2em;
   grid-column-gap: 5em;
   grid-row-gap: 5em;
-  padding-top: calc(3 * 2em);
+  padding-top: calc(2 * 2em);
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: start !important;
   align-items: flex-start;
-  width: 35em;
+  width: 30em;
   height: 100%;
   margin-left: auto;
   position: relative;
@@ -64,12 +64,13 @@
 .menu-inner {
   z-index: 1;
   grid-column-gap: 5em;
-  grid-row-gap: 5em;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  grid-row-gap: 2em;
+  
+  
   height: 100%;
   display: flex;
+  flex-direction: column;
+  
   position: relative;
   overflow: auto;
 }
@@ -120,18 +121,24 @@
   z-index: 10;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
-  font-size: 3.625em;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 1.1;
+  /* line-height: 1.1; */
   position: relative;
   color: var(--color-dark, #131313);
   overflow: hidden;
   display: block;
-  height: 1.1em;
+  /* height: 1.1em; */
 }
 @media(max-width : 576px){
   .menu-link-heading{
     font-size: 1.625em !important;
+  }
+}
+
+@media(min-width : 1300px){
+  .menu-link-heading{
+    font-size: 3.625em !important;
   }
 }
 
@@ -173,7 +180,7 @@
 .menu-details {
   padding-left: 2em;
   grid-column-gap: 1.25em;
-  grid-row-gap: 1.25em;
+  
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;

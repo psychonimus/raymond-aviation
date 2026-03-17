@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -10,10 +10,26 @@ export default function Navbar({ toggleMenu }) {
   const [lang, setLang] = useState("EN");
   const [region, setRegion] = useState("US");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,7 +39,7 @@ export default function Navbar({ toggleMenu }) {
   return (
     <>
       
-      <nav className={`ac-navbar ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`ac-navbar ${isScrolled ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
         {/* Left */}
         <div className="ac-nav-left">
           <select value={lang} onChange={e => setLang(e.target.value)}>
@@ -42,12 +58,12 @@ export default function Navbar({ toggleMenu }) {
 
         {/* Center Brand */}
         <Link to="/" className="ac-nav-brand ">
-          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{width : "120px"}} />
+          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{width : "100px"}} />
         </Link>
 
         {/* Right */}
         <div className="ac-nav-right">
-          <a className="ac-nav-contact d-none d-md-block">Contact Us</a>
+          <Link to="/contact" className="ac-nav-contact d-none d-md-block">Contact Us</Link>
           
           <button onClick={toggleMenu} className="ac-hamburger" aria-label="Menu">
             <span/>

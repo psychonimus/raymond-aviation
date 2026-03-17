@@ -3,6 +3,7 @@
     border-top: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    border-top: 2px solid var(--primary);
 }
 
 .ra-footer::before {
@@ -16,7 +17,7 @@
 }
 
 .ra-footer-main {
-    padding: 72px 0 56px;
+    padding: 40px 0 30px;
 }
 
 .ra-reach-label {
@@ -43,7 +44,7 @@
 
 .ra-title {
     font-family: 'primary bold', serif;
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-size: clamp(2.4rem, 1vw, 3.8rem);
 
     color: #2E110F;
     letter-spacing: 0.05em;
@@ -57,8 +58,12 @@
     font-size: 1rem;
     color: var(--muted-text);
     max-width: 440px;
-    line-height: 1.7;
+    
     margin: 0 auto 36px;
+}
+
+.ra-social-link img{
+    width: 30px;
 }
 
 .ra-cta-btn {

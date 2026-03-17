@@ -11,7 +11,7 @@
 
 .contact-section{
     position: relative;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@
     height: 1px;
     background: linear-gradient(to right, var(--gold), transparent);
     width: 220px;
-    margin: 0.6rem auto 2.8rem;
+    margin: 0.6rem auto 0.6rem;
     opacity: 0.7;
 }
 
@@ -73,9 +73,21 @@
     font-family: 'secondary bold', sans-serif;
 }
 
+.contact-hero-title{
+    font-family: 'primary bold', sans-serif;
+    font-size: 4rem;
+    margin-bottom : 3rem;
+}
+
+@media(max-width : 1250px){
+    .contact-hero-title{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
 .copy-body {
     font-size: 1rem;
-    line-height: 1.85;
+    
     color: #fff;
     font-weight: 300;
     opacity: 0.88;
@@ -87,7 +99,7 @@
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(201, 169, 110, 0.22);
     border-radius: 2px;
-    padding: 1.6rem 1.4rem;
+    padding: 1rem 1.4rem;
     backdrop-filter: blur(6px);
 }
 
@@ -135,6 +147,12 @@
     font-weight: 500;
     display: block;
     font-family: 'secondary regular', sans-serif;
+    
+}
+@media(max-width : 1250px){
+    .form-field-label{
+        display: none !important;
+    }
 }
 
 .form-ctrl {

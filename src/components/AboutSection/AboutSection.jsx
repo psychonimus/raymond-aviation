@@ -168,7 +168,7 @@ export default function PilatusSection() {
                 <section className="pilatus-hero row" ref={sectionRef}>
                     {/* ── LEFT ── */}
                     <div className="hero-left col-lg-4">
-                        <div className="hero-eyebrow mb-5" ref={eyebrowRef}>
+                        <div className="hero-eyebrow mb-3" ref={eyebrowRef}>
                             <span>About us</span>
                         </div>
 
@@ -188,14 +188,11 @@ export default function PilatusSection() {
 
                         </div>
 
-                        <h4 className="mb-4" >Since 1996</h4>
+                        <h4 className="mb-2" >Since 1996</h4>
 
                         <div className="hero-bottom">
                             <p className="hero-body" ref={bodyRef} style={{ opacity: 0 }}>
-                                Welcome to precision engineering combined with striking aesthetics.
-                                Designed to delight, the PC-24 is your personal Swiss Army knife –
-                                with wings. We can fly you into the most exclusive and hard-to-reach
-                                airports, avoiding the queues and beating the blues.
+                                Government announced ‘Open Sky Policy’ in 1992 and stage was set for growth of Aviation Industry in India. ‘Raymond Aviation’ started its Non Scheduled Operations in February 1996. Raymond was one of the first Corporate Houses to launch Non Scheduled Operations for Air Charter Services in India in 1996.
                             </p>
 
                             <div ref={ctaRef} style={{ opacity: 0 }}>

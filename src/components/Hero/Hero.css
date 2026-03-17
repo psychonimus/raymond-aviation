@@ -90,7 +90,7 @@
 
 .ac-hero-headline {
     font-family: Primary bold, serif;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 400;
     color: rgba(255, 248, 235, 0.97);
     letter-spacing: 0.06em;
@@ -156,8 +156,14 @@
     text-align: center;
     width: 100%;
     padding: 0 10px;
-    margin-bottom: 30px;
+    
     transition: transform 0.3s ease;
+}
+
+@media(min-width : 1300px){
+    .ac-service-item{
+        margin-bottom: 30px;
+    }
 }
 
 .ac-service-item:hover {
@@ -172,14 +178,13 @@
 }
 
 .ac-service-title {
-    font-family: primary regular, serif;
+    font-family: secondary regular, serif;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(255, 248, 235, 0.95);
     line-height: 1.3;
-    margin-bottom: 10px;
+    
 }
 
 .ac-service-desc {

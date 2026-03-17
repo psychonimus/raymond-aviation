@@ -114,19 +114,19 @@ const RaymondAviationFooter = () => {
             <div ref={socialsRef} className="ra-socials">
               {/* Instagram */}
               <a href="#" className="ra-social-link" aria-label="Instagram">
-                <img src="/assets/images/instagram.svg" alt="" style={{width : "40px"}} />
+                <img src="/assets/images/instagram.svg" alt=""  />
               </a>
               {/* Facebook */}
               <a href="#" className="ra-social-link" aria-label="Facebook">
-                <img src="/assets/images/facebook.svg" alt="" style={{width : "40px"}} />
+                <img src="/assets/images/facebook.svg" alt=""  />
               </a>
               {/* Email */}
               <a href="mailto:info@raymondaviation.com" className="ra-social-link" aria-label="Email">
-                <img src="/assets/images/mail.svg" alt="" style={{width : "40px"}} />
+                <img src="/assets/images/mail.svg" alt=""  />
               </a>
               {/* Phone */}
               <a href="tel:+919999999999" className="ra-social-link" aria-label="Phone">
-                <img src="/assets/images/call.svg" alt="" style={{width : "40px"}} />
+                <img src="/assets/images/call.svg" alt=""  />
               </a>
             </div>
           </div>

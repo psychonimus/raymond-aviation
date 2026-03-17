@@ -117,8 +117,8 @@ const ContactSection = () => {
 
                 <div className="contact-inner">
                     {/* Title */}
-                    <div className="text-center pt-5 mt-5" ref={titleRef}>
-                        <h1 className="hero-title text-white" style={{fontSize : "2rem"}}>
+                    <div className="text-center " ref={titleRef}>
+                        <h1 className="hero-title contact-hero-title text-white" >
                             Contact our Team
                         </h1>
                     </div>

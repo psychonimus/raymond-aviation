@@ -55,12 +55,24 @@
 
   .acc-title {
     font-family: 'primary bold', serif;
-    font-size: clamp(26px, 1.5vw, 38px);
+    font-size: 1.1rem;
     font-weight: 400;
     color: #2a2217;
     line-height: 1.1;
     letter-spacing: -0.01em;
     transition: color 0.3s ease;
+  }
+
+  @media(max-width : 768px){
+    .acc-title{
+      font-size: 0.8rem;
+    }
+  }
+
+  @media(min-width : 1300px){
+    .acc-title{
+      font-size: 2rem;
+    }
   }
 
   .acc-trigger:hover .acc-title { color: #6b5a3e; }

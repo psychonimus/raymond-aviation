@@ -232,8 +232,8 @@ export default function LuxuryAccordion() {
 
           {/* LEFT — accordion (full width on mobile, half on md+) */}
           <div className="col-12 col-md-6 acc-left">
-            <p className="hero-eyebrow" ref={eyebrowRef}>A Better way to fly</p>
-            <h2 className="hero-title mb-5">
+            <p className="hero-eyebrow" ref={eyebrowRef} >A Better way to fly</p>
+            <h2 className="hero-title mb-5" style={{fontSize : "2.8rem"}}>
               Why Choose Us?
             </h2>
 
