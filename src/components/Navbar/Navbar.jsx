@@ -42,17 +42,7 @@ export default function Navbar({ toggleMenu }) {
       <nav className={`ac-navbar ${isScrolled ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
         {/* Left */}
         <div className="ac-nav-left">
-          <select value={lang} onChange={e => setLang(e.target.value)}>
-            <option>EN</option>
-            <option>FR</option>
-            <option>DE</option>
-            <option>ES</option>
-          </select>
-          <button className="ac-nav-search d-none d-md-block" aria-label="Search">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
-          </button>
+          
           <a className="ac-nav-services d-none d-md-block">Services</a>
         </div>
 

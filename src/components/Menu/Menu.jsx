@@ -95,7 +95,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                 <div className="menu-link-bg" />
                             </a>
                         </li>
-                        <li className="menu-list-item">
+                        <li className="menu-list-item"> 
                             <a href="#" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">Blog</span>
@@ -120,18 +120,22 @@ const Menu = ({ isOpen, toggleMenu }) => {
                         <p data-menu-fade="" className="p-small">
                             Socials
                         </p>
-                        <div className="socials-row">
-                            <a data-menu-fade="" href="#" className="p-large text-link">
-                                Instagram
+                        <div className="ra-socials">
+                            {/* Instagram */}
+                            <a href="#" className="ra-social-link" aria-label="Instagram">
+                                <img src="/assets/images/instagram.svg" alt="" />
                             </a>
-                            <a data-menu-fade="" href="#" className="p-large text-link">
-                                LinkedIn
+                            {/* Facebook */}
+                            <a href="#" className="ra-social-link" aria-label="Facebook">
+                                <img src="/assets/images/facebook.svg" alt="" />
                             </a>
-                            <a data-menu-fade="" href="#" className="p-large text-link">
-                                X/Twitter
+                            {/* Email */}
+                            <a href="mailto:info@raymondaviation.com" className="ra-social-link" aria-label="Email">
+                                <img src="/assets/images/mail.svg" alt="" />
                             </a>
-                            <a data-menu-fade="" href="#" className="p-large text-link">
-                                Awwwards
+                            {/* Phone */}
+                            <a href="tel:+919999999999" className="ra-social-link" aria-label="Phone">
+                                <img src="/assets/images/call.svg" alt="" />
                             </a>
                         </div>
                     </div>
