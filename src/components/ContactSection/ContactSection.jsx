@@ -16,18 +16,18 @@ const ContactSection = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        countryCode: "+31",
+        countryCode: "+91",
         phone: "",
         message: "",
     });
 
     const countryCodes = [
         { code: "+1", country: "US" },
+        { code: "+91", country: "IN" },
         { code: "+31", country: "NL" },
         { code: "+44", country: "GB" },
         { code: "+49", country: "DE" },
         { code: "+33", country: "FR" },
-        { code: "+91", country: "IN" },
         { code: "+81", country: "JP" },
         { code: "+86", country: "CN" },
         { code: "+61", country: "AU" },
@@ -200,7 +200,7 @@ const ContactSection = () => {
                                                     onBlur={handleInputBlur}
                                                 >
                                                     {countryCodes.map((c) => (
-                                                        <option key={c.code} value={c.code} style={{ background: "#fff" }}>
+                                                        <option key={c.code} value={c.code} className="country-option">
                                                             {c.code}
                                                         </option>
                                                     ))}

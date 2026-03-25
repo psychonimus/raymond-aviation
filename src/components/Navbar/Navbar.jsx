@@ -48,7 +48,7 @@ export default function Navbar({ toggleMenu }) {
 
         {/* Center Brand */}
         <Link to="/" className="ac-nav-brand ">
-          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{width : "100px"}} />
+          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{width : "150px"}} />
         </Link>
 
         {/* Right */}
