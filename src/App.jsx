@@ -47,7 +47,7 @@ const MainApp = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
-      <Footer />
+      
     </SmoothScroll>
   )
 }

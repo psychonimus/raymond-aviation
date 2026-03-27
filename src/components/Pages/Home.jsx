@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
         <Hero />
-        <ParallaxEffect />
+        {/* <ParallaxEffect />
         <AboutSection />  
         <ServicesSection />
-        <WhyChooseUsSection />
+        <WhyChooseUsSection /> */}
     </>
   )
 }

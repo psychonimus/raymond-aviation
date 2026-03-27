@@ -130,15 +130,15 @@ export default function Hero() {
 
                             {/* CTA */}
                             <div className="ac-cta-wrap d-flex flex-column align-items-center justify-content-center">
-                                {/* <button className="ac-cta-btn">Request Charter Quote</button> */}
+                                
                                 <FlowButton text="Request Charter Quote" />
                                 
-                                <div className="ac-scroll-indicator">
+                                {/* <div className="ac-scroll-indicator">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <h6 className="text-white mt-3">Scroll Down</h6>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
