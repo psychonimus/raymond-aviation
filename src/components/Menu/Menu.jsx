@@ -66,17 +66,17 @@ const Menu = ({ isOpen, toggleMenu }) => {
                 <div className="menu-inner">
                     <ul className="menu-list">
                         <li className="menu-list-item">
-                            <a href="#" className="menu-link w-inline-block">
+                            <Link to="/about" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">About us</span>
                                     <span className="menu-link-text is--hover">About us</span>
                                 </div>
                                 <p className="eyebrow">01</p>
                                 <div className="menu-link-bg" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="menu-list-item">
-                            <a href="#" className="menu-link w-inline-block">
+                            <a href="" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">Our work</span>
                                     <span className="menu-link-text is--hover">Our work</span>
@@ -86,14 +86,14 @@ const Menu = ({ isOpen, toggleMenu }) => {
                             </a>
                         </li>
                         <li className="menu-list-item">
-                            <a href="#" className="menu-link w-inline-block">
+                            <Link to="/services" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">Services</span>
                                     <span className="menu-link-text is--hover">Services</span>
                                 </div>
                                 <p className="eyebrow">03</p>
                                 <div className="menu-link-bg" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="menu-list-item"> 
                             <a href="#" className="menu-link w-inline-block">

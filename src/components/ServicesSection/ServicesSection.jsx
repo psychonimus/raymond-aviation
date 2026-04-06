@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./ServicesSection.css";
+import { Link } from "react-router-dom";
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -10,19 +11,21 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const services = [
   {
     id: "01",
-    title: "Charter on Demand",
+    title: "Charter On-Demand",
+    path: "/charter-on-demand",
     description:
       "Your Schedule, Our Wings, No Compromise. Experience the ultimate in global mobility.",
     image:
-      "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80",
+      "./assets/images/charter-on-demand.png",
   },
   {
     id: "02",
     title: "Fractional Ownership",
+    path: "/fractional-ownership",
     description:
       "The Power of Ownership. The Freedom of a Fleet. Why own just one jet or one helicopter when you can have access to the world's most advanced fleet.",
     image:
-      "/assets/images/fractional-ownership.jpg",
+      "./assets/images/fractional-ownership.png",
   },
   {
     id: "03",
@@ -38,70 +41,69 @@ const services = [
     description:
       "Your Asset, Our Expertise, Seamless Performance. Professional aircraft management for the modern owner.",
     image:
-      "https://images.unsplash.com/photo-1606768666853-403c90a981ad?w=800&q=80",
+      "./assets/images/aircraft-management.png",
   },
   {
     id: "05",
-    title: "Aircraft Sales, Acquisitions & Aircraft Leasing",
+    title: "Aircraft Sales & Acquisitions",
     description:
       "Navigate the Global Skies with Certainty. Expertise in the acquisition and sale of world-class aircraft.",
     image:
-      "/assets/images/air-ambulance.jpg",
+      "./assets/images/aircraft-sales.png",
   },
   {
     id: "06",
-    title: "Design & Completion Management / Interior Refurbishment",
+    title: "Empty Leg Flights",
     description:
       "Redefining the Art of the Interior. From initial concept sketches to final airworthiness certification.",
     image:
-      "/assets/images/interior.jpg",
+      "./assets/images/empty-leg-flights.png",
   },
-  {
-    id: "07",
-    title: "Helicopter Services",
-    description:
-      "Experience the agility of helicopter travel through our flexible charter, fractional, and short-term leasing programs tailored for the fast paced world.",
-    image:
-      "/assets/images/helishare.jpg",
-  },
-  {
-    id: "08",
-    title: "Empty Leg Flights",
-    description:
-      "Luxury at the Speed of Opportunity. Experience the world of private aviation for up to 75% less.",
-    image:
-      "/assets/images/empty-leg-flight.jpg",
-  },
-  {
-    id: "09",
-    title: "Aircraft Maintenance",
-    description:
-      "Precision Maintenance for a Digital Age. Total technical support for fixed-wing and rotary aircraft.",
-    image:
-      "/assets/images/charter-maintenance.jpg",
-  },
-  {
-    id: "10",
-    title: "Concierge & Flight Care Services",
-    description:
-      "The Art of the Perfect Journey. Luxury doesn't end when you land. From Michelin-starred sky-dining to secure ground logistics and global event access.",
-    image:
-      "/assets/images/Concierge-services.jpg",
-  },
-  {
-    id: "11",
-    title: "Broker / Affiliate Partnership Programs",
-    description:
-      "Scale Your Business with a Global Fleet at Your Fingertips. Join the industry's most transparent and rewarding partnership network.",
-    image:
-      "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&q=80",
-  },
-  
+  // {
+  //   id: "07",
+  //   title: "Helicopter Services",
+  //   description:
+  //     "Experience the agility of helicopter travel through our flexible charter, fractional, and short-term leasing programs tailored for the fast paced world.",
+  //   image:
+  //     "/assets/images/helishare.jpg",
+  // },
+  // {
+  //   id: "08",
+  //   title: "Empty Leg Flights",
+  //   description:
+  //     "Luxury at the Speed of Opportunity. Experience the world of private aviation for up to 75% less.",
+  //   image:
+  //     "/assets/images/empty-leg-flight.jpg",
+  // },
+  // {
+  //   id: "09",
+  //   title: "Aircraft Maintenance",
+  //   description:
+  //     "Precision Maintenance for a Digital Age. Total technical support for fixed-wing and rotary aircraft.",
+  //   image:
+  //     "/assets/images/charter-maintenance.jpg",
+  // },
+  // {
+  //   id: "10",
+  //   title: "Concierge & Flight Care Services",
+  //   description:
+  //     "The Art of the Perfect Journey. Luxury doesn't end when you land. From Michelin-starred sky-dining to secure ground logistics and global event access.",
+  //   image:
+  //     "/assets/images/Concierge-services.jpg",
+  // },
+  // {
+  //   id: "11",
+  //   title: "Broker / Affiliate Partnership Programs",
+  //   description:
+  //     "Scale Your Business with a Global Fleet at Your Fingertips. Join the industry's most transparent and rewarding partnership network.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&q=80",
+  // },
+
 ];
 
 const gridClasses = [
   "div1", "div2", "div3", "div4", "div5", "div6",
-  "div7", "div8", "div9", "div10", "div11", "div12",
 ];
 
 export default function ServicesSection() {
@@ -134,7 +136,7 @@ export default function ServicesSection() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 60%", 
+        start: "top 60%",
         toggleActions: "play none none none"
       }
     });
@@ -178,6 +180,7 @@ export default function ServicesSection() {
 
         <div className="parent">
           {services.map((service, index) => (
+
             <div
               key={service.id}
               className={`service-card ${gridClasses[index]}`}
@@ -190,7 +193,9 @@ export default function ServicesSection() {
                 setCursorVisible(false);
               }}
             >
-              <div
+
+              <Link to={service.path}>
+                <div
                 className="card-bg"
                 style={{ backgroundImage: `url(${service.image})` }}
               />
@@ -203,7 +208,9 @@ export default function ServicesSection() {
                 <div className="card-divider" />
                 <p className="card-desc">{service.description}</p>
               </div>
+              </Link>
             </div>
+
           ))}
         </div>
       </section>

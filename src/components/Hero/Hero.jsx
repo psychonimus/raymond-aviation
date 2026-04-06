@@ -79,7 +79,7 @@ export default function Hero() {
                         {/* Headline */}
                         <div className="ac-hero-text ">
                             {/* <p className="ac-hero-overline">Our Expert Services</p> */}
-                            <h1 className="ac-hero-headline mt-2">Your Gateway to  <br  /> Reliable Private Aviation.</h1>
+                            <h1 className="ac-hero-headline mt-2">Your Gateway to <br/> Reliable Private Aviation.</h1>
                         </div>
                         <div>
                             {/* Services */}

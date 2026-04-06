@@ -7,32 +7,32 @@ const ITEMS = [
   
   {
     id: "availability",
-    title: "20 years Aviation Experience",
-    text: "Our team is available around the clock to handle any request, no matter the time zone or urgency. From last-minute flight arrangements to personalized services, we provide seamless support whenever you need it. With us, assistance is never more than a call away.",
+    title: "Aviation Experience",
+    text: "India's most trusted name in private charters.",
     image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80",
   },
   {
     id: "onboard",
-    title: "Lounge / Hangar Facility",
-    text: "Every flight is tailored with a range of personalized onboard services designed to elevate your journey. From fine dining and curated entertainment to attentive crew and seamless connectivity, every detail is arranged to ensure maximum comfort and enjoyment in the air.",
+    title: "Flexible Planning",
+    text: "Easily manage your dates and preferences in one place.",
     image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200&q=80",
   },
   {
     id: "efficient",
-    title: "Existing helipads Network",
-    text: "Efficiency is at the core of every flight we operate. From optimized routes and streamlined procedures to quick boarding and smooth ground handling, we make sure your time is always used wisely. The result is a seamless journey that gets you where you need to be, faster and without compromise.",
+    title: "Trusted Support",
+    text: "We’re here to ensure every detail of your reservation is perfect.",
     image: "/assets/images/helipads.jpg",
   },
   {
     id: "safety",
-    title: "Safety Awards by HAI & NBAA",
-    text: "Efficiency is at the core of every flight we operate. From optimized routes and streamlined procedures to quick boarding and smooth ground handling, we make sure your time is always used wisely. The result is a seamless journey that gets you where you need to be, faster and without compromise.",
+    title: "Transparent Pricing",
+    text: "All-inclusive quotes with no hidden charges for positioning, crew, or fuel surcharges.",
     image: "/assets/images/safety.jpg",
   },
   {
     id: "crew",
-    title: "Multi Crew Operations",
-    text: "Efficiency is at the core of every flight we operate. From optimized routes and streamlined procedures to quick boarding and smooth ground handling, we make sure your time is always used wisely. The result is a seamless journey that gets you where you need to be, faster and without compromise.",
+    title: "24/7 Operations Desk",
+    text: "A real person answers, always. We aren't just a booking engine, we're your partners in making things happen. Ready to get started?",
     image: "/assets/images/multi-crew.jpg",
   },
 ];
@@ -234,7 +234,7 @@ export default function LuxuryAccordion() {
           <div className="col-12 col-md-6 acc-left">
             <p className="hero-eyebrow" ref={eyebrowRef} >A Better way to fly</p>
             <h2 className="hero-title mb-5" style={{fontSize : "2.8rem"}}>
-              Why Choose Us?
+              Why book with us?
             </h2>
 
             <ul className="acc-list">

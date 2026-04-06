@@ -160,19 +160,19 @@ export default function PilatusSection() {
 
     return (
         <>
-
             <div className="pilatus-wrapper">
 
-
                 {/* HERO */}
-                <section className="pilatus-hero row" ref={sectionRef}>
+                <section className="pilatus-hero" ref={sectionRef}>
+
                     {/* ── LEFT ── */}
-                    <div className="hero-left col-lg-4">
-                        <div className="hero-eyebrow mb-3" ref={eyebrowRef}>
+                    <div className="hero-left">
+
+                        <div className="hero-eyebrow" ref={eyebrowRef}>
                             <span>About us</span>
                         </div>
 
-                        <div className="hero-title-block mb-3">
+                        <div className="hero-title-block">
                             <h2 className="hero-title">
                                 {["Raymond", "Aviation"].map((line, i) => (
                                     <span
@@ -184,36 +184,78 @@ export default function PilatusSection() {
                                     </span>
                                 ))}
                             </h2>
-
-
                         </div>
 
-                        <h4 className="mb-2" >Since 1996</h4>
-
                         <div className="hero-bottom">
+                            {/* <p className="hero-body" ref={bodyRef} style={{ opacity: 0 }}>
+                                With over three decades of excellence, Raymond Aviation stands as a pioneer in India&apos;s private air travel sector. One of the first corporate houses to launch non-scheduled charter services in 1996, we have consistently delivered premium flight experiences to a global clientele.
+                            </p> */}
                             <p className="hero-body" ref={bodyRef} style={{ opacity: 0 }}>
-                                Government announced ‘Open Sky Policy’ in 1992 and stage was set for growth of Aviation Industry in India. ‘Raymond Aviation’ started its Non Scheduled Operations in February 1996. Raymond was one of the first Corporate Houses to launch Non Scheduled Operations for Air Charter Services in India in 1996.
+                                Our extensive operational history spans the entire spectrum of aviation, from single and twin-engine helicopters to turboprops and long-range heavy jets. This deep-rooted expertise allows us to anticipate the unique needs of the Indian high flyer, blending luxury and comfort with an unwavering commitment to safety and reliability. At Raymond Aviation, we don&apos;t just provide a flight; we offer a legacy of trust and value for those who demand the best in the skies.
                             </p>
 
+                            <h4>Key Highlights</h4>
+
                             <div ref={ctaRef} style={{ opacity: 0 }}>
-                                <FlowButtonDark text="Read on now" />
+                                <div className="highlight-parent">
+
+                                    <div className="highlight-card">
+                                        <div className="highlight-icon">
+                                            <img src="/assets/images/experience.svg" alt="" />
+                                        </div>
+                                        <div className="highlight-text">
+                                            <p className="highlight-title">30+ Years of Excellence</p>
+                                            <p className="highlight-desc">Proven experience with trusted performance and industry leadership.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="highlight-card">
+                                        <div className="highlight-icon">
+                                            <img src="/assets/images/experience.svg" alt="" />
+                                        </div>
+                                        <div className="highlight-text">
+                                            <p className="highlight-title">Diverse Fleet Experience</p>
+                                            <p className="highlight-desc">Expertise across helicopters and long-range jets.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="highlight-card">
+                                        <div className="highlight-icon">
+                                            <img src="/assets/images/experience.svg" alt="" />
+                                        </div>
+                                        <div className="highlight-text">
+                                            <p className="highlight-title">Tailored Service</p>
+                                            <p className="highlight-desc">Personalized solutions for elite Indian and global travellers.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="highlight-card">
+                                        <div className="highlight-icon">
+                                            <img src="/assets/images/experience.svg" alt="" />
+                                        </div>
+                                        <div className="highlight-text">
+                                            <p className="highlight-title">Unmatched Safety Standards</p>
+                                            <p className="highlight-desc">Built on reliability and rigorous safety practices.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-
-
-
-
                         </div>
                     </div>
 
                     {/* ── RIGHT (IMAGE) ── */}
-                    <div className="hero-right col-lg-8 bg-danger">
-                        <div className="image-container" >
-                            <img className="jet-image" ref={imageRef} src="../assets/images/about-img.jpg" alt="" />
-
+                    <div className="hero-right">
+                        <div className="image-container">
+                            <img
+                                className="jet-image"
+                                ref={imageRef}
+                                src="/assets/images/about-img.jpg"
+                                alt="Raymond Aviation aircraft interior"
+                            />
                         </div>
-
-
                     </div>
+
                 </section>
             </div>
         </>

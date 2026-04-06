@@ -90,13 +90,16 @@
 
 .ac-hero-headline {
     font-family: Primary bold, serif;
-    font-size: clamp(2rem, 3vw, 4rem);
+    font-size: clamp(2rem, 4vw, 4rem);
     font-weight: 400;
     color: rgba(255, 248, 235, 0.97);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    line-height: 1.1;
+    line-height: 1.2;
     text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
 }
 
 @media(max-width: 768px){
@@ -104,7 +107,10 @@
         margin-top: 3rem;
     }
     .ac-hero-headline {
-        font-size: 2.5rem !important;
+        font-size: clamp(2vw, 5vw, 2.5rem) !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
     
 }

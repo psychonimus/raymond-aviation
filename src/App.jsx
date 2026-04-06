@@ -6,6 +6,10 @@ import SmoothScroll from './components/SmoothScroll/SmoothScroll.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Contact from './components/Pages/Contact.jsx'
 import Skeleton from "@mui/material/Skeleton";
+import About from './components/Pages/About.jsx'
+import Services from './components/Pages/Services.jsx'
+import CharterOnDemand from './components/Pages/CharterOnDemand.jsx'
+import FractionalOwnership from './components/Pages/FractionalOwnership.jsx'
 
 
 const HomePage = lazy(() => import("./components/Pages/Home.jsx"));
@@ -45,9 +49,13 @@ const MainApp = () => {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/charter-on-demand" element={<CharterOnDemand />} />
+          <Route path="/fractional-ownership" element={<FractionalOwnership />} />
         </Routes>
       </Suspense>
-      
+
     </SmoothScroll>
   )
 }

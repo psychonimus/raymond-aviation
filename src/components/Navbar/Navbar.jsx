@@ -43,7 +43,7 @@ export default function Navbar({ toggleMenu }) {
         {/* Left */}
         <div className="ac-nav-left">
 
-          <a className="ac-nav-services d-none d-md-block">Services</a>
+          <Link to="/services" className="ac-nav-services d-none d-md-block">Services</Link>
         </div>
 
         {/* Center Brand */}
