@@ -12,13 +12,13 @@ import { FlowButton } from "../FlowButton/FlowButton";
 
 
 
-export default function HeroBanner({headlineUp, headlineDown}) {
+export default function HeroBanner({headlineUp, headlineDown, bgImage}) {
     return (
         <>
 
             <div className="HeroBanner-hero-wrapper">
 
-                <div className=" ac-hero-bg" />
+                <div className=" ac-hero-bg" style={{ backgroundImage: `url("${bgImage}")`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
                 <div className="ac-hero-content">
 
                     <div className="container-fluid d-flex align-items-end justify-content-between h-100 pb-5">

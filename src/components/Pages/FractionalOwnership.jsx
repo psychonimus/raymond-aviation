@@ -7,7 +7,7 @@ import FractionalOwnershipContent from '../FractionalOwnershipContent/Fractional
 const FractionalOwnership = () => {
     return (
         <>
-            <HeroBanner headlineUp="Fractional" headlineDown="Ownership" />
+            <HeroBanner headlineUp="Fractional" headlineDown="Ownership" bgImage="/assets/images/fractional-ownership-bg.png" />
 
             <section className="charter-on-demand-about bg-white py-5">
                 <div className="container">

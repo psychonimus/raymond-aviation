@@ -111,7 +111,7 @@ const ContactSection = () => {
                     muted
                     loop
                     playsInline
-                    src="/assets/videos/contact-bg.webm"
+                    src="/assets/videos/contact-bg-2.webm"
                 />
                 <div className="bg-overlay" />
 

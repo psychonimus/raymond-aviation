@@ -7,7 +7,7 @@ const tabs = [
     {
         id: "private",
         label: "Guaranteed Availability",
-        image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=900&q=80",
+        image: "./assets/images/availability.jpg",
         heading: "Guaranteed Availability",
         body: [
             "Every fractional owner holds a guaranteed right to the aircraft. This is not a priority wait-list or a soft commitment — it is a contractual guarantee. Raymond Aviation maintains fleet capacity and scheduling discipline to ensure your aircraft is ready, staffed, and fuelled when you need it, typically within four hours of notice.",

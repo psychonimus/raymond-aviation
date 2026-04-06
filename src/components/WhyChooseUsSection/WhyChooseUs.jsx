@@ -9,7 +9,7 @@ const ITEMS = [
     id: "availability",
     title: "Aviation Experience",
     text: "India's most trusted name in private charters.",
-    image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80",
+    image: "./assets/images/avi-experience.jpg",
   },
   {
     id: "onboard",
@@ -21,19 +21,19 @@ const ITEMS = [
     id: "efficient",
     title: "Trusted Support",
     text: "We’re here to ensure every detail of your reservation is perfect.",
-    image: "/assets/images/helipads.jpg",
+    image: "./assets/images/trusted-support.jpg",
   },
   {
     id: "safety",
     title: "Transparent Pricing",
     text: "All-inclusive quotes with no hidden charges for positioning, crew, or fuel surcharges.",
-    image: "/assets/images/safety.jpg",
+    image: "./assets/images/aviation-experience.jpg",
   },
   {
     id: "crew",
     title: "24/7 Operations Desk",
     text: "A real person answers, always. We aren't just a booking engine, we're your partners in making things happen. Ready to get started?",
-    image: "/assets/images/multi-crew.jpg",
+    image: "./assets/images/crew.jpg",
   },
 ];
 

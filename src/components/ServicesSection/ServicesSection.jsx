@@ -33,7 +33,7 @@ const services = [
     description:
       "The Sky, Simplified. Unlock guaranteed access to a global fleet with a single card.",
     image:
-      "/assets/images/aviation-consultancy.jpg",
+      "/assets/images/affiliation.png",
   },
   {
     id: "04",

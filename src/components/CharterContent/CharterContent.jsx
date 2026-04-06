@@ -7,7 +7,7 @@ const tabs = [
   {
     id: "private",
     label: "Group Charter",
-    image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=900&q=80",
+    image: "./assets/images/group-charter.jpg",
     heading: "Group Charter",
     body: [
       "For corporate groups, incentive travel, sports teams, and conference delegations, Raymond Aviation offers group charter solutions, combining the logistics of commercial group travel with the exclusivity and flexibility of private aviation.",
@@ -18,7 +18,7 @@ const tabs = [
   {
     id: "group",
     label: "Medical & Air Ambulance Charter",
-    image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=900&q=80",
+    image: "./assets/images/aircraft-sales.png",
     heading: "Medical & Air Ambulance Charter",
     body: [
       "When health demands urgent response, time becomes the most critical factor. Raymond Aviation provides air ambulance and medevac charter services, configured for patient care, staffed with qualified medical crew, and cleared for priority departure at the shortest possible notice.",
@@ -114,7 +114,7 @@ export default function CharterContent() {
         {/* LEFT: Image */}
         <div className="image-panel">
           <img ref={imageRef} src={tab.image} alt={tab.heading} />
-          <div className="image-overlay" />
+          {/* <div className="image-overlay" /> */}
           {/* <div className="image-label">BBAC Aviation</div> */}
         </div>
 
