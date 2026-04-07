@@ -30,6 +30,7 @@ const services = [
   {
     id: "03",
     title: "Jet Card Programs (through our Affiliation) ",
+    path: "/jet-card-program",
     description:
       "The Sky, Simplified. Unlock guaranteed access to a global fleet with a single card.",
     image:
@@ -38,6 +39,7 @@ const services = [
   {
     id: "04",
     title: "Aircraft Management",
+    path: "/aircraft-management",
     description:
       "Your Asset, Our Expertise, Seamless Performance. Professional aircraft management for the modern owner.",
     image:

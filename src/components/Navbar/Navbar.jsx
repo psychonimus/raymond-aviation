@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 
 
@@ -43,7 +44,7 @@ export default function Navbar({ toggleMenu }) {
         {/* Left */}
         <div className="ac-nav-left">
 
-          <Link to="/services" className="ac-nav-services d-none d-md-block">Services</Link>
+          <Link to="" className="ac-nav-services d-none d-md-block"><IoPersonCircleSharp style={{width:"40px", height:"40px"}} /></Link>
         </div>
 
         {/* Center Brand */}

@@ -75,7 +75,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                 <div className="menu-link-bg" />
                             </Link>
                         </li>
-                        <li className="menu-list-item">
+                        {/* <li className="menu-list-item">
                             <a href="" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">Our work</span>
@@ -84,7 +84,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                 <p className="eyebrow">02</p>
                                 <div className="menu-link-bg" />
                             </a>
-                        </li>
+                        </li> */}
                         <li className="menu-list-item">
                             <Link to="/services" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">

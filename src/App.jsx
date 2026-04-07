@@ -10,6 +10,8 @@ import About from './components/Pages/About.jsx'
 import Services from './components/Pages/Services.jsx'
 import CharterOnDemand from './components/Pages/CharterOnDemand.jsx'
 import FractionalOwnership from './components/Pages/FractionalOwnership.jsx'
+import JetCardProgram from './components/Pages/JetCardProgram.jsx'
+import AircraftManagement from './components/Pages/AircraftManagement.jsx'
 
 
 const HomePage = lazy(() => import("./components/Pages/Home.jsx"));
@@ -53,6 +55,8 @@ const MainApp = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/charter-on-demand" element={<CharterOnDemand />} />
           <Route path="/fractional-ownership" element={<FractionalOwnership />} />
+          <Route path="/jet-card-program" element={<JetCardProgram />} />
+          <Route path="/aircraft-management" element={<AircraftManagement />} />
         </Routes>
       </Suspense>
 
