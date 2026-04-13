@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import "./Footer.css";
 import { FlowButton } from "../FlowButton/FlowButton";
 import { FlowButtonDark } from "../FlowButton/FlowButtonDark";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 const RaymondAviationFooter = () => {
   const footerRef = useRef(null);
@@ -111,24 +112,30 @@ const RaymondAviationFooter = () => {
               <FlowButtonDark text="Get a Quote"/>
             </div>
 
-            <div ref={socialsRef} className="ra-socials">
-              {/* Instagram */}
+            {/* <div ref={socialsRef} className="ra-socials">
+              
               <a href="#" className="ra-social-link" aria-label="Instagram">
                 <img src="/assets/images/instagram.svg" alt=""  />
               </a>
-              {/* Facebook */}
+              
               <a href="#" className="ra-social-link" aria-label="Facebook">
                 <img src="/assets/images/facebook.svg" alt=""  />
               </a>
-              {/* Email */}
+             
               <a href="mailto:info@raymondaviation.com" className="ra-social-link" aria-label="Email">
                 <img src="/assets/images/mail.svg" alt=""  />
               </a>
-              {/* Phone */}
+              
               <a href="tel:+919999999999" className="ra-social-link" aria-label="Phone">
                 <img src="/assets/images/call.svg" alt=""  />
               </a>
+            </div> */}
+
+            <div className="mt-4">
+
+            <SocialIcons />
             </div>
+
           </div>
 
           <div ref={bottomBarRef} className="ra-bottom-bar">

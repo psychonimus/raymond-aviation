@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer'
 const CharterOnDemand = () => {
   return (
     <>
-        <HeroBanner headlineUp="Charter" headlineDown="On-Demand" bgImage="/assets/images/charter-on-demand-bg.png"/>
+        <HeroBanner headlineUp="Charter" headlineDown="On-Demand" bgImage="/assets/images/charter-on-demand-banner.jpg"/>
         <CharterOnDemandAbout/>
         <CharterContent />
         <WhyChooseUsSection />

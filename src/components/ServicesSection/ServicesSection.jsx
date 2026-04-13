@@ -48,6 +48,7 @@ const services = [
   {
     id: "05",
     title: "Aircraft Sales & Acquisitions",
+    path: "/aircraft-sales-and-aquisition",
     description:
       "Navigate the Global Skies with Certainty. Expertise in the acquisition and sale of world-class aircraft.",
     image:
@@ -56,8 +57,9 @@ const services = [
   {
     id: "06",
     title: "Empty Leg Flights",
+    path: "/empty-leg-flights",
     description:
-      "Redefining the Art of the Interior. From initial concept sketches to final airworthiness certification.",
+      "Luxury at the Speed of Opportunity. Experience the world of private aviation for up to 75% less.",
     image:
       "./assets/images/empty-leg-flights.png",
   },

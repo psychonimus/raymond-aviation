@@ -10,8 +10,8 @@ const JetCardProgram = () => {
     <>
         <HeroBanner
             headlineUp="Jet Card Program"
-            headlineDown="Your Passport to Seamless Travel"
-            bgImage="./assets/images/jet-card-program.jpg"
+            headlineDown="Private Aviation, Simplified"
+            bgImage="./assets/images/jet-card-program-bg.png"
         />
 
         <section className="charter-on-demand-about bg-white py-5">

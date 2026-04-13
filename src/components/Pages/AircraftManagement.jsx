@@ -11,7 +11,7 @@ const AircraftManagement = () => {
         <HeroBanner
             headlineUp="Aircraft Management"
             headlineDown="Your Aircraft Management Simplified"
-            bgImage="./assets/images/jet-card-program.jpg"
+            bgImage="./assets/images/aircraft-management-banner.jpg"
         />
 
         <section className="charter-on-demand-about bg-white py-5">
