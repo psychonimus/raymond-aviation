@@ -47,13 +47,7 @@ const services = [
     { icon: "design", title: "Jet Card \n Programs", desc: "Tailored interior design and completion management for the most discerning aviation clients." },
     { icon: "mgmt1", title: "Aircraft \n Management", desc: "Comprehensive aircraft management ensuring safety, compliance, and operational excellence." },
     { icon: "mgmt2", title: "Aircraft Acquisitions \n & Leasing", desc: "Premium crew management and operational support for private and corporate fleet owners." },
-    { icon: "design2", title: "Design & \n Fit-Out Management", desc: "Bespoke charter services and expert brokerage connecting clients to the finest aircraft worldwide." },
-    { icon: "sales", title: "Helicopter \n Services", desc: "Expert guidance through every stage of aircraft acquisition and remarketing with full market access." },
     { icon: "design", title: "Empty Leg \n Flights", desc: "Tailored interior design and completion management for the most discerning aviation clients." },
-    { icon: "mgmt1", title: "Aircraft \n Maintenance", desc: "Comprehensive aircraft management ensuring safety, compliance, and operational excellence." },
-    { icon: "mgmt2", title: "Concierge & Flight \n Care Services", desc: "Premium crew management and operational support for private and corporate fleet owners." },
-    { icon: "partnership", title: "Partnership \n Programs", desc: "Bespoke charter services and expert brokerage connecting clients to the finest aircraft worldwide." },
-   
 ];
 
 
@@ -79,7 +73,7 @@ export default function Hero() {
                         {/* Headline */}
                         <div className="ac-hero-text ">
                             {/* <p className="ac-hero-overline">Our Expert Services</p> */}
-                            <h1 className="ac-hero-headline mt-2">Your Gateway to <br/> Reliable Private Aviation.</h1>
+                            <h1 className="ac-hero-headline mt-2">Your Gateway to <br /> Reliable Private Aviation.</h1>
                         </div>
                         <div>
                             {/* Services */}
@@ -97,7 +91,7 @@ export default function Hero() {
                                     breakpoints={{
                                         // when window width is >= 480px
                                         480: {
-                                            slidesPerView:2,
+                                            slidesPerView: 2,
                                         },
                                         // when window width is >= 768px
                                         768: {
@@ -130,9 +124,9 @@ export default function Hero() {
 
                             {/* CTA */}
                             <div className="ac-cta-wrap d-flex flex-column align-items-center justify-content-center">
-                                
+
                                 <FlowButton text="Request Charter Quote" />
-                                
+
                                 {/* <div className="ac-scroll-indicator">
                                     <span></span>
                                     <span></span>
