@@ -43,18 +43,19 @@ export default function Navbar({ toggleMenu }) {
       <nav className={`ac-navbar ${isScrolled ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
         {/* Left */}
         <div className="ac-nav-left">
-
-          <Link to="" className="ac-nav-services d-none d-md-block"><IoPersonCircleSharp style={{width:"40px", height:"40px"}} /></Link>
+          <Link to="/" className="ac-nav-brand ">
+          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{ width: "120px" }} />
+        </Link>
+          
         </div>
 
         {/* Center Brand */}
-        <Link to="/" className="ac-nav-brand ">
-          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{ width: "130px" }} />
-        </Link>
+        
 
         {/* Right */}
         <div className="ac-nav-right">
           <Link to="/contact" className="ac-nav-contact d-none d-md-block">Contact Us</Link>
+          <Link to="" className="ac-nav-services d-none d-md-block"><IoPersonCircleSharp style={{width:"40px", height:"40px"}} /></Link>
 
           <button onClick={toggleMenu} className="ac-hamburger" aria-label="Menu">
             <span />

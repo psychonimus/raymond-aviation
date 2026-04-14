@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-import 'swiper/css/navigation';
 import "./Hero.css";
 import { FlowButton } from "../FlowButton/FlowButton";
+import { Link } from "react-router-dom";
 
 
 
@@ -37,17 +31,17 @@ const icons = {
         <img src="../assets/images/plane-design.svg" alt="" style={{ width: "50px" }} />
     ),
     partnership: (
-        <img src="../assets/images/partnership.svg" alt="" style={{ width: "50px" }} />
+        <img src="../assets/images/empty-leg.svg" alt="" style={{ width: "50px" }} />
     ),
 };
 
 const services = [
-    { icon: "charter", title: "Charter \n On-Demand", desc: "Bespoke charter services and expert brokerage connecting clients to the finest aircraft worldwide." },
-    { icon: "sales", title: "Fractional \n Ownership", desc: "Expert guidance through every stage of aircraft acquisition and remarketing with full market access." },
-    { icon: "design", title: "Jet Card \n Programs", desc: "Tailored interior design and completion management for the most discerning aviation clients." },
-    { icon: "mgmt1", title: "Aircraft \n Management", desc: "Comprehensive aircraft management ensuring safety, compliance, and operational excellence." },
-    { icon: "mgmt2", title: "Aircraft Acquisitions \n & Leasing", desc: "Premium crew management and operational support for private and corporate fleet owners." },
-    { icon: "design", title: "Empty Leg \n Flights", desc: "Tailored interior design and completion management for the most discerning aviation clients." },
+    { icon: "charter", title: "Charter \n On-Demand", desc: "Bespoke charter services and expert brokerage connecting clients to the finest aircraft worldwide.", path: "/charter-on-demand" },
+    { icon: "sales", title: "Fractional \n Ownership", desc: "Expert guidance through every stage of aircraft acquisition and remarketing with full market access.", path: "/fractional-ownership" },
+    { icon: "design", title: "Jet Card \n Programs", desc: "Tailored interior design and completion management for the most discerning aviation clients.", path: "/jet-card-program" },
+    { icon: "mgmt1", title: "Aircraft \n Management", desc: "Comprehensive aircraft management ensuring safety, compliance, and operational excellence.", path: "/aircraft-management" },
+    { icon: "mgmt2", title: "Aircraft Acquisitions \n & Leasing", desc: "Premium crew management and operational support for private and corporate fleet owners.", path: "/aircraft-sales-and-aquisition" },
+    { icon: "partnership", title: "Empty Leg \n Flights", desc: "Tailored interior design and completion management for the most discerning aviation clients.", path: "/empty-leg-flights" },
 ];
 
 
@@ -78,34 +72,10 @@ export default function Hero() {
                         <div>
                             {/* Services */}
                             <div className="ac-services">
-                                <Swiper
-                                    modules={[Autoplay]}
-                                    spaceBetween={0}
-                                    slidesPerView={1}
-                                    navigation={true}
-                                    autoplay={{
-                                        delay: 3000,
-                                        disableOnInteraction: false,
-                                    }}
-                                    loop={true}
-                                    breakpoints={{
-                                        // when window width is >= 480px
-                                        480: {
-                                            slidesPerView: 2,
-                                        },
-                                        // when window width is >= 768px
-                                        768: {
-                                            slidesPerView: 4,
-                                        },
-                                        // when window width is >= 1024px
-                                        1024: {
-                                            slidesPerView: 5,
-                                        },
-                                    }}
-                                    className="ac-services-swiper"
-                                >
+                                <div className="ac-services-grid">
                                     {services.map((svc, i) => (
-                                        <SwiperSlide key={svc.title + i}>
+                                        <div className="ac-service-item-wrapper" key={svc.title + i}>
+                                            <Link style={{textDecoration:"none"}} to={svc.path}>
                                             <div className="ac-service-item">
                                                 <div className="ac-service-icon">{icons[svc.icon]}</div>
                                                 <div className="ac-service-title">
@@ -117,9 +87,10 @@ export default function Hero() {
                                                     ))}
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
+                                            </Link>
+                                        </div>
                                     ))}
-                                </Swiper>
+                                </div>
                             </div>
 
                             {/* CTA */}

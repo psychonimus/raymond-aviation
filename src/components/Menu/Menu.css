@@ -168,7 +168,7 @@
 
 .menu-link-bg {
   z-index: 0;
-  background-color: var(--color-neutral-800, #333);
+  background-color: var(--color-neutral-800, var(--primary));
   transform-origin: 50% 100%;
   transform-style: preserve-3d;
   transition: transform .55s cubic-bezier(.65, .05, 0, 1);

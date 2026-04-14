@@ -1,7 +1,27 @@
-.HeroBanner-hero-wrapper{
-    background: url("../assets/images/about-bg.png") no-repeat center center/cover;
+.HeroBanner-hero-wrapper {
     position: relative;
     width: 100%;
+}
+
+.HeroBanner-swiper-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.HeroBanner-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.HeroBanner-bg-slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ── Sky gradient background (Overlay) ── */
@@ -93,14 +113,15 @@
     text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .ac-hero-overline {
         margin-top: 3rem;
     }
+
     .HeroBanner-hero-headline {
         font-size: 5vw !important;
     }
-    
+
 }
 
 /* ── Services row ── */
@@ -114,7 +135,8 @@
 }
 
 .ac-services-row {
-    display: none; /* Replaced by Swiper */
+    display: none;
+    /* Replaced by Swiper */
 }
 
 .ac-services-swiper {
@@ -150,12 +172,12 @@
     text-align: center;
     width: 100%;
     padding: 0 10px;
-    
+
     transition: transform 0.3s ease;
 }
 
-@media(min-width : 1300px){
-    .ac-service-item{
+@media(min-width : 1300px) {
+    .ac-service-item {
         margin-bottom: 30px;
     }
 }
@@ -178,7 +200,7 @@
     letter-spacing: 0.1em;
     color: rgba(255, 248, 235, 0.95);
     line-height: 1.3;
-    
+
 }
 
 .ac-service-desc {
@@ -199,9 +221,11 @@
     .ac-services-row {
         gap: 15px;
     }
+
     .ac-service-item {
         width: 100%;
     }
+
     .ac-service-divider {
         display: none;
     }
@@ -211,6 +235,7 @@
     .ac-hero-text {
         margin-top: 100px;
     }
+
     .ac-service-item {
         width: 100%;
     }
@@ -220,10 +245,12 @@
     .ac-hero-headline {
         font-size: 28px;
     }
+
     .ac-service-item {
         width: 100%;
         max-width: 100%;
     }
+
     .ac-hero-content {
         padding-top: 20px;
     }
@@ -313,7 +340,15 @@
 }
 
 @keyframes arrowBlink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

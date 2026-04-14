@@ -4,6 +4,7 @@ import { CustomEase } from 'gsap/CustomEase';
 import { useGSAP } from '@gsap/react';
 import { Link } from 'react-router-dom';
 import './Menu.css';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 gsap.registerPlugin(CustomEase);
 
@@ -71,7 +72,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                     <span className="menu-link-text">About us</span>
                                     <span className="menu-link-text is--hover">About us</span>
                                 </div>
-                                <p className="eyebrow">01</p>
+                                {/* <p className="eyebrow">01</p> */}
                                 <div className="menu-link-bg" />
                             </Link>
                         </li>
@@ -91,7 +92,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                     <span className="menu-link-text">Services</span>
                                     <span className="menu-link-text is--hover">Services</span>
                                 </div>
-                                <p className="eyebrow">03</p>
+                                {/* <p className="eyebrow">03</p> */}
                                 <div className="menu-link-bg" />
                             </Link>
                         </li>
@@ -101,7 +102,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                     <span className="menu-link-text">Blog</span>
                                     <span className="menu-link-text is--hover">Blog</span>
                                 </div>
-                                <p className="eyebrow">04</p>
+                                {/* <p className="eyebrow">04</p> */}
                                 <div className="menu-link-bg" />
                             </a>
                         </li>
@@ -111,7 +112,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                     <span className="menu-link-text">Contact us</span>
                                     <span className="menu-link-text is--hover">Contact us</span>
                                 </div>
-                                <p className="eyebrow">05</p>
+                                {/* <p className="eyebrow">05</p> */}
                                 <div className="menu-link-bg" />
                             </Link>
                         </li>
@@ -120,24 +121,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                         <p data-menu-fade="" className="p-small">
                             Socials
                         </p>
-                        <div className="ra-socials">
-                            {/* Instagram */}
-                            <a href="#" className="ra-social-link" aria-label="Instagram">
-                                <img src="/assets/images/instagram.svg" alt="" />
-                            </a>
-                            {/* Facebook */}
-                            <a href="#" className="ra-social-link" aria-label="Facebook">
-                                <img src="/assets/images/facebook.svg" alt="" />
-                            </a>
-                            {/* Email */}
-                            <a href="mailto:info@raymondaviation.com" className="ra-social-link" aria-label="Email">
-                                <img src="/assets/images/mail.svg" alt="" />
-                            </a>
-                            {/* Phone */}
-                            <a href="tel:+919999999999" className="ra-social-link" aria-label="Phone">
-                                <img src="/assets/images/call.svg" alt="" />
-                            </a>
-                        </div>
+                        <SocialIcons />
                     </div>
                 </div>
             </nav>

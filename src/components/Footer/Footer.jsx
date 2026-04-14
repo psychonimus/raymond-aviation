@@ -100,7 +100,7 @@ const RaymondAviationFooter = () => {
             </div>
 
             <h2 ref={titleRef} className="ra-title">
-              Reserve Your Aircraft
+              Book A Charter
             </h2>
 
             <p ref={taglineRef} className="ra-tagline">

@@ -1,24 +1,41 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, EffectFade } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
 import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 import "./HeroBanner.css";
 import { FlowButton } from "../FlowButton/FlowButton";
 
 
 
 
-export default function HeroBanner({headlineUp, headlineDown, bgImage}) {
+export default function HeroBanner({ headlineUp, headlineDown, bgImage, bgImages }) {
+    const images = bgImages || (bgImage ? [bgImage] : []);
+
     return (
         <>
 
             <div className="HeroBanner-hero-wrapper">
-
-                <div className=" ac-hero-bg" style={{ backgroundImage: `url("${bgImage}")`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
+                <div className="HeroBanner-swiper-container">
+                    <Swiper
+                        modules={[Autoplay, Navigation, EffectFade]}
+                        effect="fade"
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        loop={true}
+                        allowTouchMove={false}
+                        className="HeroBanner-swiper"
+                    >
+                        {images.map((img, idx) => (
+                            <SwiperSlide key={idx}>
+                                <div className="ac-hero-bg HeroBanner-bg-slide" style={{ backgroundImage: `url("${img}")`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
                 <div className="ac-hero-content">
 
                     <div className="container-fluid d-flex align-items-end justify-content-between h-100 pb-5">
@@ -33,7 +50,7 @@ export default function HeroBanner({headlineUp, headlineDown, bgImage}) {
 
 
                             {/* CTA */}
-                            
+
                         </div>
                     </div>
 

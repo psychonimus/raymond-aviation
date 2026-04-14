@@ -9,7 +9,7 @@ const AircraftSalesAndAquisition = () => {
         <HeroBanner
             headlineUp="Aircraft Sales & Acquisition"
             headlineDown="The Right Aircraft. The Right Price."
-            bgImage="./assets/images/aircraft-sales-and-aquisition-bg.png"
+            bgImage="./assets/images/aircraft-sales-banner.jpg"
         />
 
         <section className="charter-on-demand-about bg-white py-5">
