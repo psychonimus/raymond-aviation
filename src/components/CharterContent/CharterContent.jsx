@@ -7,7 +7,7 @@ const tabs = [
   {
     id: "private",
     label: "Group Charter",
-    image: "./assets/images/group-charter.jpg",
+    image: "./assets/images/group-charter.webp",
     heading: "Group Charter",
     body: [
       "For corporate groups, incentive travel, sports teams, and conference delegations, Raymond Aviation offers group charter solutions, combining the logistics of commercial group travel with the exclusivity and flexibility of private aviation.",
@@ -18,7 +18,7 @@ const tabs = [
   {
     id: "group",
     label: "Medical & Air Ambulance Charter",
-    image: "./assets/images/aircraft-sales.png",
+    image: "./assets/images/aircraft-sales.webp",
     heading: "Medical & Air Ambulance Charter",
     body: [
       "When health demands urgent response, time becomes the most critical factor. Raymond Aviation provides air ambulance and medevac charter services, configured for patient care, staffed with qualified medical crew, and cleared for priority departure at the shortest possible notice.",

@@ -97,14 +97,14 @@ const Menu = ({ isOpen, toggleMenu }) => {
                             </Link>
                         </li>
                         <li className="menu-list-item"> 
-                            <a href="#" className="menu-link w-inline-block">
+                            <Link to="/blogs" className="menu-link w-inline-block">
                                 <div className="menu-link-heading">
                                     <span className="menu-link-text">Blog</span>
                                     <span className="menu-link-text is--hover">Blog</span>
                                 </div>
                                 {/* <p className="eyebrow">04</p> */}
                                 <div className="menu-link-bg" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="menu-list-item">
                             <Link to="/contact" className="menu-link w-inline-block">

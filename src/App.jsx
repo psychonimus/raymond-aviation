@@ -16,7 +16,7 @@ import JetCardProgram from './components/Pages/JetCardProgram.jsx'
 import AircraftManagement from './components/Pages/AircraftManagement.jsx'
 import AircraftSalesAndAquisition from './components/Pages/AircraftSalesAndAquisition.jsx'
 import EmptyLegFligts from './components/Pages/EmptyLegFligts.jsx'
-
+import AllBlogs from './components/Pages/AllBlogs.jsx'
 
 const HomePage = lazy(() => import("./components/Pages/Home.jsx"));
 
@@ -64,6 +64,7 @@ const MainApp = () => {
             <Route path="/aircraft-management" element={<PageTransition><AircraftManagement /></PageTransition>} />
             <Route path="/aircraft-sales-and-aquisition" element={<PageTransition><AircraftSalesAndAquisition /></PageTransition>} />
             <Route path="/empty-leg-flights" element={<PageTransition><EmptyLegFligts /></PageTransition>} />
+            <Route path="/blogs" element={<PageTransition><AllBlogs /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </Suspense>

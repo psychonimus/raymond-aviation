@@ -58,9 +58,7 @@ export default function Navbar({ toggleMenu }) {
           <Link to="" className="ac-nav-services d-none d-md-block"><IoPersonCircleSharp style={{width:"40px", height:"40px"}} /></Link>
 
           <button onClick={toggleMenu} className="ac-hamburger" aria-label="Menu">
-            <span />
-            <span />
-            <span />
+            <img src="../assets/images/menu-icon.svg" alt="" style={{width:"40px", height:"40px"}} />
           </button>
         </div>
       </nav>

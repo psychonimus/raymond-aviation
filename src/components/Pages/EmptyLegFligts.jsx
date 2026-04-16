@@ -10,7 +10,7 @@ const EmptyLegFligts = () => {
             <HeroBanner
                 headlineUp="Empty Leg Flights"
                 headlineDown="Private Aviation, Simplified"
-                bgImage="./assets/images/empty-leg-banner.jpg"
+                bgImage="./assets/images/empty-leg-banner.webp"
             />
 
             <section className="charter-on-demand-about bg-white py-5">

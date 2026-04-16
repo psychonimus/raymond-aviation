@@ -7,7 +7,7 @@ const tabs = [
     {
         id: "private",
         label: "Key Benefits of the Jet Card",
-        image: "./assets/images/key-card.png",
+        image: "./assets/images/key-card.webp",
         heading: "Key Benefits of the Jet Card",
         body: [
             "",
@@ -30,7 +30,7 @@ const tabs = [
     {
         id: "group",
         label: "Jet Card vs. Spot Charter ",
-        image: "./assets/images/jetcard-spotcharter.jpg",
+        image: "./assets/images/jetcard-spotcharter.webp",
         heading: "Jet Card vs. Spot Charter ",
         body: [
             "Spot charter pricing fluctuates significantly by season, route, and availability. During peak periods, Diwali, year-end, IPL season, summer holidays, charter rates can increase by 40–60% above base. Jet Card holders are insulated from this entirely. Your rate is your rate, regardless of when you fly.",

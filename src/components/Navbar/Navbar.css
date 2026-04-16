@@ -153,9 +153,12 @@
     gap: 5px;
     cursor: pointer;
     padding: 6px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: none;
     background: transparent;
     transition: border-color 0.2s;
+  }
+  .ac-hamburger img{
+    filter: invert(1);
   }
 
   .ac-hamburger:hover {

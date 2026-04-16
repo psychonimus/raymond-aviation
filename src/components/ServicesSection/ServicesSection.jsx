@@ -16,7 +16,7 @@ const services = [
     description:
       "Your Schedule, Our Wings, No Compromise. Experience the ultimate in global mobility.",
     image:
-      "./assets/images/charter-on-demand.png",
+      "./assets/images/charter-on-demand.webp",
   },
   {
     id: "02",
@@ -25,7 +25,7 @@ const services = [
     description:
       "The Power of Ownership. The Freedom of a Fleet. Why own just one jet or one helicopter when you can have access to the world's most advanced fleet.",
     image:
-      "./assets/images/fractional-ownership.png",
+      "./assets/images/fractional-ownership.webp",
   },
   {
     id: "03",
@@ -34,7 +34,7 @@ const services = [
     description:
       "The Sky, Simplified. Unlock guaranteed access to a global fleet with a single card.",
     image:
-      "/assets/images/affiliation.png",
+      "/assets/images/affiliation.webp",
   },
   {
     id: "04",
@@ -43,7 +43,7 @@ const services = [
     description:
       "Your Asset, Our Expertise, Seamless Performance. Professional aircraft management for the modern owner.",
     image:
-      "./assets/images/aircraft-management.png",
+      "./assets/images/aircraft-management.webp",
   },
   {
     id: "05",
@@ -52,7 +52,7 @@ const services = [
     description:
       "Navigate the Global Skies with Certainty. Expertise in the acquisition and sale of world-class aircraft.",
     image:
-      "./assets/images/aircraft-sales.png",
+      "./assets/images/aircraft-sales.webp",
   },
   {
     id: "06",
@@ -61,7 +61,7 @@ const services = [
     description:
       "Luxury at the Speed of Opportunity. Experience the world of private aviation for up to 75% less.",
     image:
-      "./assets/images/empty-leg-flights.png",
+      "./assets/images/empty-leg-flights.webp",
   },
   // {
   //   id: "07",
@@ -69,7 +69,7 @@ const services = [
   //   description:
   //     "Experience the agility of helicopter travel through our flexible charter, fractional, and short-term leasing programs tailored for the fast paced world.",
   //   image:
-  //     "/assets/images/helishare.jpg",
+  //     "/assets/images/helishare.webp",
   // },
   // {
   //   id: "08",
@@ -77,7 +77,7 @@ const services = [
   //   description:
   //     "Luxury at the Speed of Opportunity. Experience the world of private aviation for up to 75% less.",
   //   image:
-  //     "/assets/images/empty-leg-flight.jpg",
+  //     "/assets/images/empty-leg-flight.webp",
   // },
   // {
   //   id: "09",
@@ -85,7 +85,7 @@ const services = [
   //   description:
   //     "Precision Maintenance for a Digital Age. Total technical support for fixed-wing and rotary aircraft.",
   //   image:
-  //     "/assets/images/charter-maintenance.jpg",
+  //     "/assets/images/charter-maintenance.webp",
   // },
   // {
   //   id: "10",
@@ -93,7 +93,7 @@ const services = [
   //   description:
   //     "The Art of the Perfect Journey. Luxury doesn't end when you land. From Michelin-starred sky-dining to secure ground logistics and global event access.",
   //   image:
-  //     "/assets/images/Concierge-services.jpg",
+  //     "/assets/images/Concierge-services.webp",
   // },
   // {
   //   id: "11",

@@ -6,11 +6,10 @@ import WhyChooseUsSection from '../WhyChooseUsSection/WhyChooseUs';
 import Footer from '../Footer/Footer';
 
 const charterImages = [
-  "/assets/images/charter-on-demand-banner.jpg",
-  "/assets/images/vip-charter.jpg",
-  "/assets/images/group-charter.jpg",
-  "/assets/images/air-ambulance.jpg",
-  "/assets/images/charter-revenue.jpg"
+  "/assets/images/charter-on-demand-banner.webp",
+  "/assets/images/cod-helicopter.webp",
+  "/assets/images/cod-yatch.webp",
+  "/assets/images/aircraft-sales.webp",
 ];
 
 const CharterOnDemand = () => {
@@ -20,7 +19,7 @@ const CharterOnDemand = () => {
             headlineUp="Charter" 
             headlineDown="On-Demand" 
             bgImages={charterImages}
-            bgImage="/assets/images/charter-on-demand-banner.jpg"
+            bgImage="/assets/images/charter-on-demand-banner.webp"
         />
         <CharterOnDemandAbout/>
         <CharterContent />

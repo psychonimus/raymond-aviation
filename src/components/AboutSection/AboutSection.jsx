@@ -250,7 +250,7 @@ export default function PilatusSection() {
                             <img
                                 className="jet-image"
                                 ref={imageRef}
-                                src="/assets/images/about-img.jpg"
+                                src="/assets/images/about-img.webp"
                                 alt="Raymond Aviation aircraft interior"
                             />
                         </div>

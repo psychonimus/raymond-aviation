@@ -16,7 +16,7 @@ export default function ServiceHero() {
     return (
         <>
 
-            <div className="service-hero-wrapper" style={{ backgroundImage: `url("/assets/images/Services-bg.png")` }}>
+            <div className="service-hero-wrapper" style={{ backgroundImage: `url("/assets/images/Services-bg.webp")` }}>
 
                 <div className=" ac-hero-bg" />
                 <div className="ac-hero-content">
