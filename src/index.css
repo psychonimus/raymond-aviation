@@ -17,21 +17,21 @@
   font-family: 'secondary regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Proxima nova regular'), url('/assets/fonts/Proxima Nova Regular.otf') format('woff');
+  src: local('Poppins Regular'), local('Poppins-Regular'), url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'secondary semibold';
   font-style: normal;
-  font-weight: normal;
-  src: local('Proxima nova semibold'), url('/assets/fonts/Proxima Nova Semibold.otf') format('woff');
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'secondary bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Proxima nova bold'), url('/assets/fonts/Proxima Nova bold.otf') format('woff');
+  src: local('Poppins Bold'), local('Poppins-Bold'), url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
 }
 
 

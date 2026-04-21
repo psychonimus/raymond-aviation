@@ -15,6 +15,17 @@ export default function Navbar({ toggleMenu }) {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
+    let idleTimeout;
+
+    const resetIdleTimer = () => {
+      clearTimeout(idleTimeout);
+      idleTimeout = setTimeout(() => {
+        if (window.scrollY > 50) {
+          setIsHidden(true);
+        }
+      }, 3000);
+    };
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
@@ -31,10 +42,16 @@ export default function Navbar({ toggleMenu }) {
       }
 
       lastScrollY.current = currentScrollY;
+      resetIdleTimer();
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    resetIdleTimer();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(idleTimeout);
+    };
   }, []);
 
   return (
@@ -44,7 +61,7 @@ export default function Navbar({ toggleMenu }) {
         {/* Left */}
         <div className="ac-nav-left">
           <Link to="/" className="ac-nav-brand ">
-          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{ width: "120px" }} />
+          <img src="../assets/images/raymond-aviation-logo.svg" alt="" style={{ width: "110px" }} />
         </Link>
           
         </div>

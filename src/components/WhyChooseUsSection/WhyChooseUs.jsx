@@ -7,31 +7,36 @@ const ITEMS = [
   
   {
     id: "availability",
-    title: "Aviation Experience",
+    title: "Elevated travel experience, backed by a legacy of trust",
+    icon:"./assets/images/travel-experience.svg",
     text: "India's most trusted name in private charters.",
     image: "./assets/images/avi-experience.webp",
   },
   {
     id: "onboard",
-    title: "Flexible Planning",
+    title: "Flexible planning, aligned to your preferences",
+    icon:"./assets/images/flexible-planning.svg",
     text: "Easily manage your dates and preferences in one place.",
     image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200&q=80",
   },
   {
     id: "efficient",
-    title: "Trusted Support",
+    title: "End-to-end support from planning to execution",
+    icon:"./assets/images/end-to-end-support.svg",
     text: "We’re here to ensure every detail of your reservation is perfect.",
     image: "./assets/images/trusted-support.webp",
   },
   {
     id: "safety",
-    title: "Transparent Pricing",
+    title: "Transparent pricing and clear communication",
+    icon:"./assets/images/transparent-pricing.svg",
     text: "All-inclusive quotes with no hidden charges for positioning, crew, or fuel surcharges.",
     image: "./assets/images/aviation-experience.webp",
   },
   {
     id: "crew",
-    title: "24/7 Operations Desk",
+    title: "Round-the-clock coordination",
+    icon:"./assets/images/round-the-clock-coordination.svg",
     text: "A real person answers, always. We aren't just a booking engine, we're your partners in making things happen. Ready to get started?",
     image: "./assets/images/crew.webp",
   },
@@ -232,13 +237,14 @@ export default function LuxuryAccordion() {
 
           {/* LEFT — accordion (full width on mobile, half on md+) */}
           <div className="col-12 col-md-6 acc-left">
-            <p className="hero-eyebrow" ref={eyebrowRef} >A Better way to fly</p>
-            <h2 className="hero-title mb-5" style={{fontSize : "2.8rem"}}>
+            {/* <p className="hero-eyebrow" ref={eyebrowRef} >A Better way to Travel</p> */}
+            <h2 className="hero-title mb-5" style={{fontSize : "2.8rem", color:"var(--primary)" }}>
               Why book with us?
             </h2>
 
             <ul className="acc-list">
               {ITEMS.map((item, i) => (
+                
                 <li
                   key={item.id}
                   className="acc-item"
@@ -249,13 +255,14 @@ export default function LuxuryAccordion() {
                     className="acc-trigger"
                     onClick={() => triggerOpen(item.id)}
                     aria-expanded={openId === item.id}
-                  >
+                  > 
+                    <img src={item.icon} style={{width:"45px"}} alt="" />  
                     <span className="acc-title">{item.title}</span>
-                    <span className="acc-icon" aria-hidden="true" />
+                    {/* <span className="acc-icon" aria-hidden="true" /> */}
                     <span className="acc-trigger-line" />
                   </button>
 
-                  <div
+                  {/* <div
                     className="acc-body"
                     ref={el => (bodyRefs.current[item.id] = el)}
                   >
@@ -267,7 +274,7 @@ export default function LuxuryAccordion() {
                         {item.text}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </li>
               ))}
             </ul>

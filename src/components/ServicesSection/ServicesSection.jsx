@@ -175,7 +175,7 @@ export default function ServicesSection() {
         <div className="services-header">
           <div className="text-center">
             <p className="hero-eyebrow">What We Offer</p>
-            <h2 className="hero-title">
+            <h2 className="hero-title" style={{color:"var(--primary)"}}>
               Our Services
             </h2>
           </div>

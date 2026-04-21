@@ -95,21 +95,20 @@ const RaymondAviationFooter = () => {
       <footer ref={footerRef} className="ra-footer mt-auto">
         <div className="container">
           <div className="ra-footer-main text-center">
-            <div ref={subtitleRef} className="ra-reach-label">
+            {/* <div ref={subtitleRef} className="ra-reach-label">
               Reach Out Anytime
-            </div>
+            </div> */}
 
             <h2 ref={titleRef} className="ra-title">
-              Book A Charter
+              OWN YOUR FLIGHT EXPERIENCE
             </h2>
 
             <p ref={taglineRef} className="ra-tagline">
-              Fast city‑to‑city transfers, hill station travel, religious
-              tourism, and aerial sightseeing with unmatched convenience.
+              Fractional Ownership <span style={{color:"var(--primary)", fontWeight:"600"}}>|</span> Guaranteed Hours <span style={{color:"var(--primary)", fontWeight:"600"}}>|</span> Flexible Access  
             </p>
 
             <div className="d-flex justify-content-center" ref={btnRef}>
-              <FlowButtonDark text="Get a Quote"/>
+              <FlowButtonDark text="Enquire Now"/>
             </div>
 
             {/* <div ref={socialsRef} className="ra-socials">

@@ -7,6 +7,7 @@ import Menu from './components/Menu/Menu.jsx'
 import SmoothScroll from './components/SmoothScroll/SmoothScroll.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Contact from './components/Pages/Contact.jsx'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton.jsx'
 import Skeleton from "@mui/material/Skeleton";
 import About from './components/Pages/About.jsx'
 import Services from './components/Pages/Services.jsx'
@@ -68,7 +69,7 @@ const MainApp = () => {
           </Routes>
         </AnimatePresence>
       </Suspense>
-
+      <WhatsAppButton />
     </SmoothScroll>
   )
 }

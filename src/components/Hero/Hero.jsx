@@ -40,8 +40,8 @@ const services = [
     { icon: "sales", title: "Fractional \n Ownership", desc: "Expert guidance through every stage of aircraft acquisition and remarketing with full market access.", path: "/fractional-ownership" },
     { icon: "design", title: "Jet Card \n Programs", desc: "Tailored interior design and completion management for the most discerning aviation clients.", path: "/jet-card-program" },
     { icon: "mgmt1", title: "Aircraft \n Management", desc: "Comprehensive aircraft management ensuring safety, compliance, and operational excellence.", path: "/aircraft-management" },
-    { icon: "mgmt2", title: "Aircraft Acquisitions \n & Leasing", desc: "Premium crew management and operational support for private and corporate fleet owners.", path: "/aircraft-sales-and-aquisition" },
-    { icon: "partnership", title: "Empty Leg \n Flights", desc: "Tailored interior design and completion management for the most discerning aviation clients.", path: "/empty-leg-flights" },
+    { icon: "mgmt2", title: "Aircraft sales \n & Acquisitions", desc: "Premium crew management and operational support for private and corporate fleet owners.", path: "/aircraft-sales-and-aquisition" },
+    { icon: "partnership", title: "Helipad \n Infrastructure", desc: "Tailored interior design and completion management for the most discerning aviation clients.", path: "/empty-leg-flights" },
 ];
 
 
@@ -58,7 +58,7 @@ export default function Hero() {
                     loop
                     playsInline
                 >
-                    <source src="/assets/videos/bg-vid.webm" type="video/webm" />
+                    <source src="/assets/videos/bg-vid-2.webm" type="video/webm" />
                 </video>
                 <div className="ac-hero-bg" />
                 <div className="ac-hero-content">
@@ -67,7 +67,7 @@ export default function Hero() {
                         {/* Headline */}
                         <div className="ac-hero-text ">
                             {/* <p className="ac-hero-overline">Our Expert Services</p> */}
-                            <h1 className="ac-hero-headline mt-2">Your Gateway to <br /> Reliable Private Aviation.</h1>
+                            <h1 className="ac-hero-headline mt-2">Your Gateway to <br /> Reliable Charter Services</h1>
                         </div>
                         <div>
                             {/* Services */}

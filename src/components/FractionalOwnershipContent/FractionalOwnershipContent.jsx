@@ -10,16 +10,16 @@ const tabs = [
         image: "./assets/images/availability.webp",
         heading: "Guaranteed Availability",
         body: [
-            "Every fractional owner holds a guaranteed right to the aircraft. This is not a priority wait-list or a soft commitment — it is a contractual guarantee. Raymond Aviation maintains fleet capacity and scheduling discipline to ensure your aircraft is ready, staffed, and fuelled when you need it, typically within four hours of notice.",
+            "Every fractional owner holds a right to the aircraft for guaranteed contractual hours. Raymond Aviation maintains fleet capacity and scheduling discipline to ensure your aircraft is ready, staffed, and fuelled for your departure.",
 
         ],
         listHeading: "What Your Share Includes",
         list: [
             "Guaranteed flight hours at a fixed annual rate",
-            "Dedicated, DGCA-licenced crew assigned to your aircraft",
+            "Dedicated, qualified crew assigned to your aircraft",
             "Full aircraft maintenance and airworthiness management",
-            "Hangarage and ground handling across your primary base",
-            "Annual aircraft condition report and full maintenance transparency"
+            "Ground handling across destinations",
+            "Management of all regulatory compliances and statutory requirements",
         ],
         listHeading2: "",
         list2: [
@@ -29,26 +29,27 @@ const tabs = [
     },
     {
         id: "group",
-        label: "Who is Fractional Ownership For?",
+        label: "Fractional Cost",
         image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=900&q=80",
-        heading: "Who is Fractional Ownership For?",
+        heading: "Fractional Cost",
         body: [
             "",
 
         ],
-        listHeading: "High-Net-Worth Individuals & Family Offices",
+        listHeading: "Capital Cost",
         list: [
-            "Frequent leisure and personal travel. 50 to 200 hours per year",
-            "Consistent access to remote leisure destinations unavailable commercially",
-            "Privacy and security for the principal and their family",
-            "Estate and lifestyle asset that complements a broader investment portfolio"
+            "Asset is owned at a fraction of a cost",
+            "Asset ownership is structured through shared investment",
+            "The asset cost is equally divided based on shares per aircraft",
+            
         ],
-        listHeading2: "Corporate Leaders & Enterprises",
+        listHeading2: "Operational Cost",
         list2: [
-            "Executive travel for C-suite principals without last-minute charter price exposure",
-            "Multi-city business tour capability in a single day",
-            "Structured aviation cost centre — predictable annual aviation budget",
-            "Appropriate institutional image for client-facing travel"
+            "Asset is operated at a fraction of a cost",
+            
+            "The fixed cost of operations is equally divided based on shares per aircraft",
+            
+            "Aircraft utilization at a discounted rate"
         ],
         stats: [{ label: "oxygen, and monitoring systems", value: "Aircraft equipped with medical stretchers" }, { label: "ground ambulances, and attending physicians", value: "Coordination with hospitals" }, { label: "Both domestic and international medical evacuations handled", value: "Domestic and International" }],
     },

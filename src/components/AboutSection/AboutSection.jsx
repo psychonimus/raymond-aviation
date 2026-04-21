@@ -1,5 +1,10 @@
 import { useEffect, useRef } from "react";
 import "./AboutSection.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 import { FlowButtonDark } from "../FlowButton/FlowButtonDark";
 
@@ -246,13 +251,30 @@ export default function PilatusSection() {
 
                     {/* ── RIGHT (IMAGE) ── */}
                     <div className="hero-right">
-                        <div className="image-container">
-                            <img
-                                className="jet-image"
-                                ref={imageRef}
-                                src="/assets/images/about-img.webp"
-                                alt="Raymond Aviation aircraft interior"
-                            />
+                        <div className="image-container" ref={imageRef}>
+                            <Swiper
+                                modules={[Autoplay, EffectFade, Pagination]}
+                                effect="fade"
+                                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                                pagination={{ clickable: true, dynamicBullets: true }}
+                                loop={true}
+                                speed={1500}
+                                className="about-carousel"
+                                style={{ width: "100%", height: "100%" }}
+                            >
+                                <SwiperSlide>
+                                    <img className="jet-image" src="/assets/images/about-img.webp" alt="Raymond Aviation aircraft interior" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="jet-image" src="/assets/images/interior.webp" alt="Aircraft interior" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="jet-image" src="/assets/images/vip-charter.webp" alt="VIP Charter" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="jet-image" src="/assets/images/charter-on-demand.webp" alt="Charter Experience" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
 

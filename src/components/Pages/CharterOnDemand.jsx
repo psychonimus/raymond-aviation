@@ -5,21 +5,13 @@ import CharterContent from '../CharterContent/CharterContent';
 import WhyChooseUsSection from '../WhyChooseUsSection/WhyChooseUs';
 import Footer from '../Footer/Footer';
 
-const charterImages = [
-  "/assets/images/charter-on-demand-banner.webp",
-  "/assets/images/cod-helicopter.webp",
-  "/assets/images/cod-yatch.webp",
-  "/assets/images/aircraft-sales.webp",
-];
-
 const CharterOnDemand = () => {
   return (
     <>
         <HeroBanner 
             headlineUp="Charter" 
             headlineDown="On-Demand" 
-            bgImages={charterImages}
-            bgImage="/assets/images/charter-on-demand-banner.webp"
+            bgVideo="/assets/videos/bg-vid.webm"
         />
         <CharterOnDemandAbout/>
         <CharterContent />

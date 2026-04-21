@@ -8,7 +8,7 @@ import ServicesSection from '../ServicesSection/ServicesSection'
 const Services = () => {
   return (
     <>
-    <ServiceHero />
+    {/* <ServiceHero /> */}
     <ServicesSection />
     <Footer />
     </>

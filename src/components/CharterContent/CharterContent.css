@@ -55,6 +55,35 @@ body {
     /* filter: brightness(0.55) saturate(0.8); */
 }
 
+/* ── SWIPER CUSTOMIZATION ── */
+.charter-swiper .swiper-pagination {
+    bottom: 2.5rem !important;
+    left: 2.5rem !important;
+    text-align: left;
+    width: auto !important;
+}
+
+.charter-swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid var(--gold);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin: 0 6px !important;
+}
+
+.charter-swiper .swiper-pagination-bullet-active {
+    background: var(--gold);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.charter-swiper .swiper-pagination-bullet:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
 
 
 /* Gold accent line on right edge */
@@ -173,9 +202,9 @@ body {
 }
 
 .content-body p {
-    font-family: 'secondary bold', sans-serif;
+    font-family: 'secondary regular', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.9;
     color: rgba(232, 232, 232, 0.65);
     margin-bottom: 1.2rem;
@@ -207,7 +236,7 @@ body {
 }
 
 .stat-label {
-    font-family: 'secondary bold', sans-serif;
+    font-family: 'secondary regular', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     /* letter-spacing: 0.2em; */

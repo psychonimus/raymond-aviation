@@ -12,7 +12,7 @@
 .pilatus-hero {
   display: flex !important;
   flex-direction: row;
-  min-height: 85vh;
+  min-height: 100vh;
   background-color: #fff !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -36,12 +36,12 @@
 
 /* Eyebrow label */
 .hero-eyebrow {
-  font-family: 'primary bold', sans-serif;
+  font-family: 'secondary bold', sans-serif;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 800;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #000;
   overflow: hidden;
 }
 

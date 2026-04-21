@@ -17,7 +17,7 @@ const tabs = [
         list: [
             "Rate Certainty: Your hourly rate is fixed at the time of card purchase, immune to market fluctuations or peak-season price surges",
             "No Ownership Liability: No maintenance costs, no crew management, no asset risk",
-            "Consistent Aircraft Standard: Your card is fulfilled on Raymond Aviation's certified, DGCA-compliant fleet",
+            "Aircraft Flexibility: Flexible access across aircraft categories, with a pre-defined conversion rate",
             "Simple Accounting: One annual prepayment; each flight draws against your balance with a clear digital statement",
             "Gifting & Corporate Allocation: Jet Cards can be gifted or allocated to specific employees, family members, or clients"
         ],
@@ -33,7 +33,7 @@ const tabs = [
         image: "./assets/images/jetcard-spotcharter.webp",
         heading: "Jet Card vs. Spot Charter ",
         body: [
-            "Spot charter pricing fluctuates significantly by season, route, and availability. During peak periods, Diwali, year-end, IPL season, summer holidays, charter rates can increase by 40–60% above base. Jet Card holders are insulated from this entirely. Your rate is your rate, regardless of when you fly.",
+            "Spot charter pricing fluctuates significantly by season, route, and availability. During peak periods, festive seasons, year-end, special events, summer holidays, charter rates can increase by 40–60% above base. Jet Card holders are insulated from this price surge.",
 
         ],
         listHeading: "One payment. One rate. One less thing to manage.",

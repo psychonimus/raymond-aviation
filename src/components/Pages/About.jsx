@@ -7,8 +7,10 @@ import Footer from '../Footer/Footer'
 const About = () => {
   return (
     <>
-        <AboutHero />
-        <AboutSection />
+        {/* <AboutHero /> */}
+        <div>
+          <AboutSection />
+        </div>
         <Footer />
         
     </>
