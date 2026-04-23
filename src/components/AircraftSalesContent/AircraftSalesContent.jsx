@@ -7,7 +7,7 @@ const tabs = [
     {
         id: "private",
         label: "Aircraft Sales- Representation for Sellers",
-        image: "./assets/images/aircraft-sales.webp",
+        image: "./assets/images/aircraft-sales.jpg",
         heading: "",
         body: [
             "When you are ready to divest your aircraft, the margin between a good outcome and a great one depends entirely on preparation, positioning, and the quality of your buyer pipeline. Raymond Aviation manages every dimension of your aircraft sale.",
@@ -38,7 +38,7 @@ const tabs = [
     {
         id: "group",
         label: "Aircraft Acquisition, Representation for Buyers",
-        image: "./assets/images/aircraft-owner.webp",
+        image: "./assets/images/aircraft-acquisition.jpg",
         heading: "",
         body: [
             "Acquiring a private aircraft without expert guidance exposes you to risks that are both financial and regulatory. Raymond Aviation acts as your dedicated acquisition advisor, protecting your interests at every step.",

@@ -7,7 +7,15 @@ import FractionalOwnershipContent from '../FractionalOwnershipContent/Fractional
 const FractionalOwnership = () => {
     return (
         <>
-            <HeroBanner headlineUp="Fractional" headlineDown="Ownership" bgImage="/assets/images/fractional-ownership-bg.webp" />
+            <HeroBanner 
+                headlineUp="Fractional Ownership" 
+                // headlineDown="Ownership" 
+                bgImages={[
+                    "/assets/images/fractional-banner-1.jpg",
+                    "/assets/images/fractional-banner-2.jpg",
+                    "/assets/images/fractional-banner-3.jpg",
+                ]} 
+            />
 
             <section className="charter-on-demand-about bg-white py-5">
                 <div className="container">
@@ -38,7 +46,12 @@ const FractionalOwnership = () => {
 
             <FractionalOwnershipContent />
 
-            <Footer />
+            <Footer 
+              FooterHeader="OWN YOUR FLIGHT EXPERIENCE"
+              FooterTaglineOne="Fractional Ownership"
+              FooterTaglineTwo="Guaranteed Hours"
+              FooterTaglineThree="Flexible Access"
+            />
         </>
     )
 }
