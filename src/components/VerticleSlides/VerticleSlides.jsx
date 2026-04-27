@@ -13,7 +13,7 @@ const svgNS = "http://www.w3.org/2000/svg";
 const SLIDES = [
   {
     img: "./assets/images/types-of-helipads.jpg",
-    h2: "Types of Helipads\nWe Can Build",
+    h2: "Types of Helipads\nWe Can Build(To be Discussed)",
     h3: "Raymond Aviation has the technical expertise, equipment, and regulatory knowledge to design and construct every category of helipad across India. Each type presents unique engineering challenges, from structural load calculations for rooftop installations to marine-grade corrosion protection for coastal and floating platforms.",
     features: []
   },
@@ -92,18 +92,18 @@ const SLIDES = [
       "Building NOC"
     ]
   },
-  {
-    img: "./assets/images/luxury-helipad.jpg",
-    h2: "Hospitality & Luxury\nHelipad",
-    h3: "Premium helipads designed as lifestyle infrastructure for luxury resorts, five-star hotels, private villas, and heritage properties. These helipads are designed with aesthetics in mind, integrating with landscaping, architecture, and brand identity, while meeting all technical and regulatory requirements.",
-    features: [
-      "Architectural integration",
-      "Bespoke finishing",
-      "Landscape design coordination",
-      "VIP lounge linkage",
-      "Discreet security systems"
-    ]
-  },
+  // {
+  //   img: "./assets/images/luxury-helipad.jpg",
+  //   h2: "Hospitality & Luxury\nHelipad",
+  //   h3: "Premium helipads designed as lifestyle infrastructure for luxury resorts, five-star hotels, private villas, and heritage properties. These helipads are designed with aesthetics in mind, integrating with landscaping, architecture, and brand identity, while meeting all technical and regulatory requirements.",
+  //   features: [
+  //     "Architectural integration",
+  //     "Bespoke finishing",
+  //     "Landscape design coordination",
+  //     "VIP lounge linkage",
+  //     "Discreet security systems"
+  //   ]
+  // },
   {
     img: "./assets/images/hospital-helipad.jpg",
     h2: "Hospital / HEMS\nHelipad",
@@ -310,6 +310,7 @@ export default function VerticalSlides() {
 
       <section className="vb-stage" ref={stageRef}>
         <div className="vb-layers">
+          <div className="vb-overlay" />
 
           {/* SVG layers */}
           {SLIDES.map((slide, i) => (

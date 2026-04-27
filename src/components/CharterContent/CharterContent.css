@@ -217,7 +217,7 @@ body {
     font-weight: 400;
     color: #fff;
     line-height: 1.1;
-    /* margin-bottom: 2rem; */
+    margin-top: 2rem;
     /* letter-spacing: -0.01em; */
 }
 @media(max-width : 576px){
@@ -229,6 +229,7 @@ body {
 .content-body li{
     font-family: 'secondary regular', serif;
     font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 /* ── STATS ROW ── */

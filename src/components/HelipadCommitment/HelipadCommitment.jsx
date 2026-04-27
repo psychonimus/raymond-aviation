@@ -97,32 +97,32 @@ const HelipadCommitment = () => {
     const commitments = [
         {
             title: "Transparent Management",
-            desc: "Milestone-linked reporting for absolute clarity on capital and time.",
+            desc: "Milestone-linked reporting for clarity on capital and time",
             icon: "01"
         },
         {
             title: "Dedicated Experts",
-            desc: "A project manager and regulatory liaison officer assigned exclusively to you.",
+            desc: "Project management & regulatory liaison",
             icon: "02"
         },
         {
             title: "Weekly Updates",
-            desc: "Regular progress reports and 24/7 access to our client project portal.",
+            desc: "On-demand access to project updates",
             icon: "03"
         },
         {
             title: "Fixed-Price Contracts",
-            desc: "Clearly defined scope with robust variation control and no hidden costs.",
+            desc: "Clearly defined scope & no hidden costs",
             icon: "04"
         },
         {
             title: "Post-Commissioning",
-            desc: "12-month maintenance warranty on all civil works for lasting peace of mind.",
+            desc: "12-month warranty on all civil works.(to be discussed)",
             icon: "05"
         },
         {
             title: "Ongoing Operations",
-            desc: "Retainer-based operational support to keep your helipad mission-ready.",
+            desc: "Support to keep your helipad operational",
             icon: "06"
         }
     ];
@@ -163,15 +163,17 @@ const HelipadCommitment = () => {
                 <div className="promise-overlay"></div>
                 <div className="container position-relative z-1">
                     <div className="promise-content text-center">
-                        <h5 className="promise-eyebrow">The Raymond Promise</h5>
+                        {/* <h5 className="promise-eyebrow">The Raymond Promise</h5> */}
+                        <div className="promise-divider"></div>
+
                         <h2 className="promise-text">
-                            "We do not build helipads. We build confidence. in the air, on the ground, and in every authority that will ever inspect your facility."
+                            "We do not build helipads. We build confidence.<br></br> in the air, on the ground, and in every authority that will ever inspect your facility."
                         </h2>
                         <div className="promise-divider"></div>
-                        <p className="promise-footer-text">
+                        {/* <p className="promise-footer-text">
                             Every helipad we deliver is a reflection of 100 years of Raymond quality 
                             and 30 years of aviation expertise.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </section>

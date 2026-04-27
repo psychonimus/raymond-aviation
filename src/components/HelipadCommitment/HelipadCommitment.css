@@ -84,7 +84,7 @@
 
 .commitment-card-title {
     font-family: 'primary bold', serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
     color: #fff;
     letter-spacing: 0.05em;
@@ -95,7 +95,7 @@
     font-family: 'secondary regular', sans-serif;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0;
     /* Explicitly resetting conflicting styles from global scope */
     max-height: none !important;
@@ -106,7 +106,7 @@
 /* --- Promise Section --- */
 .promise-section {
     position: relative;
-    background-image: url('/assets/images/helipad-infra-cover.jpg');
+    /* background-image: url('/assets/images/helipad-infra-cover.jpg'); */
     background-size: cover;
     background-position: center 0%;
     background-attachment: scroll; /* Changed to scroll for GSAP parallax control */

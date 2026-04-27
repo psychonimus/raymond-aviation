@@ -1,11 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoPersonCircleSharp } from "react-icons/io5";
-
-
-
-
 
 export default function Navbar({ toggleMenu }) {
   const [lang, setLang] = useState("EN");
@@ -13,6 +9,9 @@ export default function Navbar({ toggleMenu }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const lastScrollY = useRef(0);
+  const location = useLocation();
+
+  const isLightBgPage = ["/about", "/blogs"].includes(location.pathname);
 
   useEffect(() => {
     let idleTimeout;
@@ -57,7 +56,7 @@ export default function Navbar({ toggleMenu }) {
   return (
     <>
 
-      <nav className={`ac-navbar ${isScrolled ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
+      <nav className={`ac-navbar ${isScrolled || isLightBgPage ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
         {/* Left */}
         <div className="ac-nav-left">
           <Link to="/" className="ac-nav-brand ">
